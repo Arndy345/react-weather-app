@@ -4,21 +4,41 @@
 }
 
 .App {
+    text-transform: capitalize;
     background-color: black;
+    height: max-content;
+    /* width: fit-content; */
     color: white;
-    height: 100%;
+    padding: 20px 0;
 }
 
-.App>h2 {
+img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.form-group {
+    max-width: 1000px;
+    min-width: 500px;
+}
+
+h2 {
+    color: white;
     text-align: center;
 }
 
-.movie {
-    display: block;
+button {
+    margin-top: 10px;
 }
 
-.youtube__video {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 576px) {
+    .form-group {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 350px;
+    }
+    .form-control {
+        width: 80%;
+        min-width: 100px;
+    }
 }
