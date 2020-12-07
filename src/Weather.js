@@ -16,15 +16,9 @@ function Weather({ getWeather, input, setInput }) {
         name="state"
         onChange={(event) => handleChange(event)}
         className="form-control ml-2"
+        searchOptions={{ types: ["locality", "country"] }}
       />
-      <input
-        type="text"
-        placeholder="Enter Country"
-        value={input.country}
-        name="country"
-        onChange={handleChange}
-        className="form-control ml-2"
-      />
+
       <div>
         <button
           type="submit"

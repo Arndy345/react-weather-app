@@ -5,21 +5,64 @@
 
 .App {
     text-transform: capitalize;
-    background-color: black;
+    background-color: white;
     height: max-content;
-    /* width: fit-content; */
-    color: white;
+    color: black;
     padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-img {
-    width: 50%;
-    object-fit: cover;
+.Header {
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(235, 194, 194);
+    text-align: center;
+    padding: 5px 0;
+    transition: background-color .5s ease-out;
+}
+
+.white {
+    background-color: white;
+    color: black;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.light-grey {
+    background-color: light-grey;
+    color: white;
+}
+
+.grey {
+    background-color: gray;
+    color: white;
 }
 
 .form-group {
-    max-width: 1000px;
-    min-width: 500px;
+    display: block;
+    margin-top: .5rem;
+    padding: 0;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    line-height: normal;
+    font-size: 1.875rem;
+    color: #333333;
+    border: none;
+    border-bottom: 2px solid #d6d6d6;
+    align-items: center;
+}
+
+.form-group input::placeholder {
+    color: #adadad;
+    opacity: 1;
+    line-height: normal !important;
 }
 
 h2 {
@@ -29,6 +72,16 @@ h2 {
 
 button {
     margin-top: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border: none !important;
+}
+
+.error {
+    color: lightgray;
 }
 
 @media screen and (max-width: 576px) {
